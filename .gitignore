@@ -199,3 +199,7 @@ load/tets/256_tets.npz
 /threestudio/models/guidance/adapter
 /load/shapes
 .gradio
+
+.pylintrc
+.pre-commit-config.yaml
+.editorconfig
