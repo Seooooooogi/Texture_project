@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-*$py.class
-
-.ipynb_checkpoints/
-.DS_Store
-
-/images
-/threestudio/models/guidance/adapter
