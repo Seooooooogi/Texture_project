@@ -9,8 +9,9 @@ pip install -r requirements.txt
 ```
 
 ## 2. 다운로드
-* [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter).
-사전 학습된 `ip-adapter_sd15.bin` 모델을 사용합니다. `threestudio/models/guidance/adapter/models`에 배치해 주세요.
+사전 학습된 [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) `ip-adapter_sd15.bin` 모델을 사용합니다. 
+
+`threestudio/models/guidance/adapter/models`에 배치해 주세요.
 ```bash
 cd threestudio/models/guidance/adapter/models
 wget https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.bin
