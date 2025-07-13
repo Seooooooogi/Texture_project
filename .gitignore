@@ -196,7 +196,7 @@ custom/*
 load/tets/256_tets.npz
 
 /images
-/threestudio/models/guidance/adapter
+/threestudio/models/guidance/adapter/models
 /load/shapes
 .gradio
 
