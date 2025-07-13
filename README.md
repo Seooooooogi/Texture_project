@@ -1,5 +1,5 @@
 # Texture_project
-본 프로젝트는 *[threestudio](https://github.com/threestudio-project/threestudio) 기반으로 작성된 코드입니다.
+본 프로젝트는 [threestudio](https://github.com/threestudio-project/threestudio) 기반으로 작성된 코드입니다.
 
 ## 1. 환경설정
 ```bash
