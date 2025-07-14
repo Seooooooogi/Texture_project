@@ -86,8 +86,6 @@ class StableDiffusionIPGuidance(BaseObject):
         use_cross: bool = False
         position: int = 0
 
-        image_path: str = ""
-
     cfg: Config
 
     def configure(self) -> None:
@@ -188,9 +186,6 @@ class StableDiffusionIPGuidance(BaseObject):
         if self.cfg.use_cross == True:
             self.adapter.set_position(self.cfg.position)
         
-        # self.image = Image.open(self.cfg.image_path)
-        self.image = self.cfg.image_path
-        self.image = self.image.resize((224, 224))
         threestudio.info(f"Loaded IP-Adapter!")
 
 
@@ -209,6 +204,10 @@ class StableDiffusionIPGuidance(BaseObject):
             accumulated_output -= w_n * self.get_prependicualr_component(delta_noise_pred_neg[i].unsqueeze(0), main_positive)
             
         return accumulated_output + main_positive
+
+    def set_image(self, img):
+        self.image = img
+        self.image = self.image.resize((224, 224))
         
     def add_tokens_to_model(
         self, 
